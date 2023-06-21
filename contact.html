@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Foundation&family=Jost:ital,wght@0,100;0,200;0,300;0,500;0,700;1,300;1,700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+</head>
+    <style>
+*{
+margin: 0 ;
+padding: 0 ;
+box-sizing:border-box;
+scroll-behavior: smooth;
+font-family: 'Jost',sans-serif;
+list-style: none;
+text-decoration: none;
+
+
+}
+
+header{
+position: absolute;
+width: 100%;
+height:15%;
+top: 0;
+right: 0;
+z-index: 1000;
+display:flex;
+align-items: center;
+justify-content: space-between;
+background-color: black;
+
+}
+
+.logo img{
+    max-width: 150px;
+    height: auto;
+    margin-left:50% ; 
+}
+.navmenu{
+display: flex;
+
+
+
+}
+.navmenu a{
+    color: aliceblue;
+    font-size: 16px;
+    text-transform: capitalize;
+    padding: 10px 50px;
+    font-weight: 400;
+
+}
+
+.navmenu a:hover{
+    color:red;
+}
+.nav-class a{
+    color: aliceblue;
+    font-size: 16px;
+    text-transform: capitalize;
+    padding: 10px 20px;
+    font-weight: 400;
+   margin-right: 150px;
+}
+.nav-class a:hover{
+    color:red;
+}
+
+
+
+
+
+body {
+  background-color: #e6e6e6;
+  font-size: 100%;
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+}
+
+div, textarea, input {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.container {
+  height: 100%;
+  max-width: 510px;
+  min-width: 324px;
+  margin: 50px auto 10px;
+  background-color: #fff;
+  border: 1px solid #cfcfcf80;
+  border-bottom: 3px solid #ccc;
+  margin-top: 150px;
+}
+
+.row {
+  width: 100%;
+  margin: 0 0 1em 0;
+  padding: 0 2.5em;
+}
+.row.header {
+  padding: 1.5em 2.5em;
+  border-bottom: 1px solid #ccc;
+  color: whitesmoke;
+  background-color: rgb(37, 37, 37);
+}
+.row.body {
+  padding: .5em 2.5em 1em;
+  background: url(image/logo.png) left -80px;
+}
+
+.pull-right {
+  float: right;
+}
+
+h1 {
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  display: inline-block;
+  font-weight: 100;
+  font-size: 2.8125em;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  margin: 0 0 0.1em 0;
+  padding: 0 0 0.4em 0;
+}
+
+h3 {
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+  font-size: 1.25em;
+  margin: 1em 0 0.4em 0;
+}
+
+.btn {
+  font-size: 1.0625em;
+  display: inline-block;
+  padding: 0.74em 1.5em;
+  margin: 1.5em 0 0;
+  color: #fff;
+  border-width: 0 0 0 0;
+  border-bottom: 5px solid;
+  text-transform: uppercase;
+  background-color: #b3b3b3;
+  border-bottom-color: #8c8c8c;
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+}
+.btn:hover {
+  background-color: #bfbfbf;
+}
+.btn.btn-submit {
+  background-color: #4f6fad;
+  border-bottom-color: #374d78;
+}
+.btn.btn-submit:hover {
+  background-color: #5f7db6;
+}
+
+form {
+  max-width: 100%;
+  display: block;
+  top: 100px;
+}
+form ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+form ul li {
+  margin: 0 0 0.25em 0;
+  clear: both;
+  display: inline-block;
+  width: 100%;
+}
+form ul li:last-child {
+  margin: 0;
+}
+form ul li p {
+  margin: 0;
+  padding: 0;
+  float: left;
+}
+form ul li p.right {
+  float: right;
+}
+form ul li .divider {
+  margin: 0.5em 0 0.5em 0;
+  border: 0;
+  height: 1px;
+  width: 100%;
+  display: block;
+  background-color: #4f6fad;
+  background-image: linear-gradient(to right, #ee9cb4, #4f6fad);
+}
+form ul li .req {
+  color: #ee9cb4;
+}
+form label {
+  display: block;
+  margin: 0 0 0.5em 0;
+  color: #4f6fad;
+  font-size: 1em;
+}
+form input {
+  margin: 0 0 0.5em 0;
+  border: 1px solid #ccc;
+  padding: 6px 10px;
+  color: #555;
+  font-size: 1em;
+}
+form textarea {
+  border: 1px solid #ccc;
+  padding: 6px 10px;
+  width: 100%;
+  color: #555;
+}
+form small {
+  color: #4f6fad;
+  margin: 0 0 0 0.5em;
+}
+
+@media only screen and (max-width: 480px) {
+  .pull-right {
+    float: none;
+  }
+
+  input {
+    width: 100%;
+  }
+
+  label {
+    width: 100%;
+    display: inline-block;
+    clear: both;
+  }
+
+  li, p {
+    width: 100%;
+  }
+
+  input.btn {
+    margin: 1.5em 0 0.5em;
+  }
+
+  h1 {
+    font-size: 2.25em;
+  }
+
+  h3 {
+    font-size: 1.125em;
+  }
+
+  li small {
+    display: none;
+  }
+}
+
+.map{
+margin-top:250px;
+margin-left:30%;
+}
+
+.maplabel{
+margin-top: 50px;
+padding-bottom :100px ;
+position: absolute;
+width: 100%;
+height: 90px;
+left: 0px;
+font-family: Arial, Helvetica, sans-serif;
+font-style: normal;
+font-weight: 700;
+font-size: 20px;
+line-height: 66px;
+letter-spacing: 3px;
+color: white;
+background-color: black;
+padding-top: 10px;
+padding-left: 670px;
+
+} 
+footer {
+    background-color: black;
+    color: #fff;
+    padding: 10px 0;
+    display: flex;
+    justify-content: center; 
+	margin-top: 100px;
+	border-top: 1px solid white;
+  }
+  
+  .footer-content {
+    display: flex;
+    justify-content: center; 
+  }
+  
+  .footer-content ul {
+    display: flex;
+    justify-content: center; 
+    list-style: none;
+    margin: 10 10 ; 
+    padding: 0;
+  }
+  
+  .footer-content ul li {
+    margin-right: 20px;
+  }
+  
+  .footer-content ul li a {
+    color: #fff;
+    font-size: 20px;
+  }
+  
+.fbLogo {
+    width: 80px;
+    height: 80px;
+    margin-top: 18px;
+  }
+  .mailLogo {
+    width: 110px;
+    height: 110px;
+    margin-top: 3px;
+  }
+  .twitterLogo {
+    width: 90px;
+    height: 90px;
+    margin-top: 10px;
+  }
+  .instaLogo {
+    width: 97px;
+    height: 97px;
+    margin-top: 10px;
+  }
+  .popup {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+}
+
+.popup-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+#closePopup {
+  margin-top: 10px;
+}
+    </style>
+</head>
+<body>
+    <header>
+        <a href="#" class="logo"> <img src="image/logo.png" alt=""></a>
+        
+        <ul class="navmenu">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="KarateWebsite1.html">Articles</a></li>
+            <li><a href="main.html">Shop</a></li>
+            <li><a href="MembershipEnquiry.html">Membership Enquiry</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+        <div class="nav-class">
+            <li><a href="freeClassTest.html">Try Now</a></li>
+        </div>
+        </header>
+    <div class="container">
+        <div class="row header">
+          <h1>CONTACT US</h1>
+        </div>
+        <div class="row body">
+          <form action="#">
+            <ul>
+              
+              <li>
+                <p class="left">
+                  <label for="first_name">first name</label>
+                  <input type="text" name="first_name" placeholder="John" />
+                </p>
+                <p class="left">
+                  <label for="last_name">last name</label>
+                  <input type="text" name="last_name" placeholder="Smith" />      
+                </p>
+              </li>
+              
+              <li>
+                <p>
+                  <label for="email">email <span class="req">*</span></label>
+                  <input type="email" name="email" placeholder="john.smith@gmail.com" />
+                </p>
+              </li>        
+              <li><div class="divider"></div></li>
+              <li>
+                <label for="comments">comments</label>
+                <textarea cols="46" rows="3" name="comments"></textarea>
+              </li>
+              
+              <li>
+                <input class="btn btn-submit" type="submit" value="Submit" />
+                <small>or press <strong>enter</strong></small>
+              </li>
+              
+            </ul>
+          </form>  
+        </div>
+      </div>
+      <div class="popup" id="popup">
+        <div class="popup-content">
+          <h2>Thank you for submitting!</h2>
+          <p>Your form has been successfully submitted.</p>
+          <button id="closePopup">Close</button>
+        </div>
+      </div>
+      
+        <p></p>
+      <div class="maplabel">
+        <h2>LOCATION</h2>
+      </div>
+      <div class="map">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2776.3053820852615!2d101.73823558853135!3d3.250788261076658!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31cc388697136a0d%3A0xd0562b1d03ff3247!2zU2FpZGluYSBIYW16YWggU3RhZGl1bSwgSUlVTSAoU3RhZGl1bSBJSVVNIFNhaWRpbmEgSGFtemFoL-CuuOCur-CvjeCur-Cuv-CupOCuv-CuqeCuviDgrrngrq7gr43grrjgrr4g4K644K-N4K6f4K-H4K6f4K6_4K6v4K6u4K-NKQ!5e0!3m2!1sen!2smy!4v1687265858611!5m2!1sen!2smy" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+      <footer>
+        <div class="footer-content">
+          <ul>
+            <li><a><img src="image/fbLogo.png" class="fbLogo"></a></li>
+            <li><a><img src="image/instaLogo.png" class="instaLogo"></a></li>
+            <li><a><img src="image/mailLogo.png" class="mailLogo"></a></li>
+            <li><a><img src="image/twitterLogo.png" class="twitterLogo"></a></li>
+          </ul>
+        </div>
+      </footer>
+
+
+      <script>
+        document.addEventListener('DOMContentLoaded', function() {
+          var form = document.querySelector('form');
+          form.addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevent form submission
+            showPopup();
+          });
+        });
+      
+        function showPopup() {
+          var popup = document.getElementById('popup');
+          popup.style.display = 'block';
+      
+          var closePopupBtn = document.getElementById('closePopup');
+          closePopupBtn.addEventListener('click', function() {
+            closePopup();
+          });
+        }
+      
+        function closePopup() {
+          var popup = document.getElementById('popup');
+          popup.style.display = 'none';
+        }
+      </script>
+      
+</body>
+</html>

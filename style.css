@@ -1,0 +1,224 @@
+*{
+margin: 0 ;
+padding: 0 ;
+box-sizing:border-box;
+scroll-behavior: smooth;
+font-family: 'Jost',sans-serif;
+list-style: none;
+text-decoration: none;
+
+
+}
+
+header{
+position: absolute;
+width: 100%;
+height:15%;
+top: 0;
+right: 0;
+z-index: 1000;
+display:flex;
+align-items: center;
+justify-content: space-between;
+background-color: black;
+
+}
+
+.logo img{
+    max-width: 150px;
+    height: auto;
+    margin-left:50% ;
+
+
+    
+}
+.navmenu{
+display: flex;
+
+
+
+}
+.navmenu a{
+    color: aliceblue;
+    font-size: 16px;
+    text-transform: capitalize;
+    padding: 10px 50px;
+    font-weight: 400;
+
+}
+
+.navmenu a:hover{
+    color:red;
+}
+.nav-class a{
+    color: aliceblue;
+    font-size: 16px;
+    text-transform: capitalize;
+    padding: 10px 20px;
+    font-weight: 400;
+   margin-right: 150px;
+}
+.nav-class a:hover{
+    color:red;
+}
+
+section{
+
+    padding: 5% 10%;
+}
+
+.main-home{
+
+    width:100%;
+    height: 100vh;
+    background-image: url(image/main-photo.jpg);
+    background-position: center;
+    background-size: cover;
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    align-items: center;
+    margin-top: 100px;
+
+
+}
+.main-btn{
+display: inline-block;
+color: black;
+font-size: 16px;
+font-weight: 500;
+text-transform: capitalize;
+border: 2px solid  black;
+padding: 12px 25px;
+}
+
+
+.main-btn:hover{
+
+    background-color: black;
+    color: whitesmoke;
+}
+
+
+.image{
+box-sizing: border-box;
+width: 265px;
+height: 274px;
+}
+
+.center-text h2{
+    color: #111;
+    font-size: 28px;
+    text-transform: capitalize;
+    text-align: center ;
+    margin-bottom: 50px;
+
+}
+
+.center-text span{
+
+    color: red;
+}
+
+.products {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+    justify-content: center;
+    align-content: center;
+}
+.row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.price {
+    margin-top: 10px;
+}
+
+.row img:hover{
+    transform: scale(0.9);
+}
+
+
+footer {
+    background-color: black;
+    color: #fff;
+    padding: 10px 0;
+    display: flex;
+    justify-content: center; 
+  }
+  
+  .footer-content {
+    display: flex;
+    justify-content: center; 
+  }
+  
+  .footer-content ul {
+    display: flex;
+    justify-content: center; /* Center the list items horizontally */
+    list-style: none;
+    margin: 10 10 ; 
+    padding: 0;
+  }
+  
+  .footer-content ul li {
+    margin-right: 20px;
+  }
+  
+  .footer-content ul li a {
+    color: #fff;
+    font-size: 20px;
+  }
+  
+.fbLogo {
+    width: 80px;
+    height: 80px;
+    margin-top: 18px;
+  }
+  .mailLogo {
+    width: 110px;
+    height: 110px;
+    margin-top: 3px;
+  }
+  .twitterLogo {
+    width: 90px;
+    height: 90px;
+    margin-top: 10px;
+  }
+  .instaLogo {
+    width: 97px;
+    height: 97px;
+    margin-top: 10px;
+  }
+  .popup {
+      display: none;
+      position: fixed;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.5);
+      z-index: 9999;
+  }
+
+  .popup-content {
+      display:flexbox;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background-color: #fff;
+      max-width: 400px;
+      margin: 100px auto;
+      padding: 100px;
+      border-radius: 5px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+  }
+
+
+  
+  .thank-you-message {
+      display: none;
+      text-align: center;
+      margin-top: 20px;
+  }

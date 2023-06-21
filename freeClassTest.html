@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Try a free class</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Foundation&family=Jost:ital,wght@0,100;0,200;0,300;0,500;0,700;1,300;1,700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<style>
+*{
+margin: 0 ;
+padding: 0 ;
+box-sizing:border-box;
+scroll-behavior: smooth;
+font-family: 'Jost',sans-serif;
+list-style: none;
+text-decoration: none;
+}
+
+
+header{
+position: fixed;
+width: 100%;
+height:15%;
+top: 0;
+right: 0;
+z-index: 1000;
+display:flex;
+align-items: center;
+justify-content: space-between;
+background-color: black;
+
+}
+
+footer{
+  font-size: medium;
+  font-style: italic;
+  border: 2px solid black;
+}
+
+.logo img{
+    max-width: 150px;
+    height: auto;
+    margin-left:50% ;
+
+
+    
+}
+.navmenu{
+    display: flex;
+
+
+
+}
+.navmenu a{
+    color: aliceblue;
+    font-size: 16px;
+    text-transform: capitalize;
+    padding: 10px 50px;
+    font-weight: 400;
+
+}
+
+.navmenu a:hover{
+    color:red;
+}
+.nav-class a{
+    color: aliceblue;
+    font-size: 16px;
+    text-transform: capitalize;
+    padding: 10px 20px;
+    font-weight: 400;
+    margin-right: 150px;
+}
+.nav-class a:hover{
+    color:red;
+}
+
+body, html {
+    height: 100%;
+    font-family: "Inconsolata", sans-serif;
+    
+}
+
+.bgimg {
+    background-position: center;
+    background-size: cover;
+    background-image: url("image/MainImage.png");
+    min-height: 100%;
+}
+
+.w3-tag-sub{
+    background-color: none;
+    color: red;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+    
+}
+
+.menu {
+  display: none;
+}
+/*sample2*/
+body{
+  background-color: #b4b4b4;
+}
+#registration-form {
+  font-family:'Open Sans Condensed', sans-serif;
+	width: 400px;
+  min-width:250px;
+	margin: 20px auto;
+	position: relative;
+  border: 4px solid black;
+}
+
+#registration-form .fieldset {
+	background-color:#d5d5d5;
+
+	border-radius: 3px;
+  
+}
+
+ #registration-form legend {
+	text-align: center;
+	background: #364351;
+	width: 100%;
+	padding: 30px 0;
+	border-radius: 3px 3px 0 0;
+	color: white;
+font-size:2em;
+}
+
+.fieldset form{
+  border:1px solid #2f2f2f;
+  margin:0 auto;
+  display:block;
+  width:100%;
+  padding:30px 20px;
+  box-sizing:border-box;
+  border-radius:0 0 3px 3px;
+}
+.placeholder #registration-form label {
+	display: none;
+}
+ .no-placeholder #registration-form label{
+  margin-left:5px;
+  position:relative;
+  display:block;
+  color:grey;
+  text-shadow:0 1px white;
+  font-weight:bold;
+}
+/* all */
+::-webkit-input-placeholder { text-shadow:1px 1px 1px white; font-weight:bold; }
+::-moz-placeholder { text-shadow:0 1px 1px white; font-weight:bold; } /* firefox 19+ */
+:-ms-input-placeholder { text-shadow:0 1px 1px white; font-weight:bold; } /* ie */
+#registration-form input[type=text] {
+	padding: 15px 20px;
+	border-radius: 1px;
+  margin:5px auto;
+  background-color:#f7f7f7;
+	border: 1px solid silver;
+
+	-webkit-box-shadow: inset 0 1px 5px rgba(0,0,0,0.2);
+	box-shadow: inset 0 1px 5px rgba(0,0,0,0.2), 0 1px rgba(255,255,255,.8);
+	width: 100%;
+
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+  -webkit-transition:background-color .5s ease;
+-moz-transition:background-color .5s ease;
+-o-transition:background-color .5s ease;
+-ms-transition:background-color .5s ease;
+transition:background-color .5s ease;
+}
+.no-placeholder #registration-form input[type=text] {
+	padding: 10px 20px;
+}
+
+#registration-form input[type=text]:active, .placeholder #registration-form input[type=text]:focus {
+	outline: none;
+	border-color: silver;
+  background-color:white;
+}
+
+#registration-form input[type=submit] {
+  font-family:'Open Sans Condensed', sans-serif;
+  text-transform:uppercase;
+  outline:none;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+	width: 100%;
+	background-color: #5C8CA7;
+	padding: 10px;
+	color: white;
+	border: 1px solid #3498db;
+	border-radius: 3px;
+	font-size: 1.5em;
+	font-weight: bold;
+	margin-top: 5px;
+	cursor: pointer;
+  position:relative;
+  top:0;
+}
+
+#registration-form input[type=submit]:hover {
+	background-color: #2980b9;
+}
+
+#registration-form input[type=submit]:active {
+background:#5C8CA7;
+}
+
+
+.parsley-error-list{
+background-color:#C34343;
+padding: 5px 11px;
+margin: 0;
+list-style: none;
+border-radius: 0 0 3px 3px;
+margin-top:-5px;
+  margin-bottom:5px;
+  color:white;
+  border:1px solid #870d0d;
+  border-top:none;
+    -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  position:relative;
+  top:-1px;
+  text-shadow:0px 1px 1px #460909;
+    font-weight:700;
+  font-size:12px;
+}
+.parsley-error{
+	border-color:#870d0d!important;
+  border-bottom:none;
+}
+#registration-form select{
+	width:100%;
+	padding:5px;
+}
+::-moz-focus-inner {
+  border: 0;
+}
+footer {
+    background-color: black;
+    color: #fff;
+    padding: 10px 0;
+    display: flex;
+    justify-content: center; 
+	margin-top: 0px;
+	border-top: 1px solid white;
+  }
+  
+  .footer-content {
+    display: flex;
+    justify-content: center; 
+  }
+  
+  .footer-content ul {
+    display: flex;
+    justify-content: center; 
+    list-style: none;
+    margin: 10 10 ; 
+    padding: 0;
+  }
+  
+  .footer-content ul li {
+    margin-right: 20px;
+  }
+  
+  .footer-content ul li a {
+    color: #fff;
+    font-size: 20px;
+  }
+  
+.fbLogo {
+    width: 80px;
+    height: 80px;
+    margin-top: 18px;
+  }
+  .mailLogo {
+    width: 110px;
+    height: 110px;
+    margin-top: 3px;
+  }
+  .twitterLogo {
+    width: 90px;
+    height: 90px;
+    margin-top: 10px;
+  }
+  .instaLogo {
+    width: 97px;
+    height: 97px;
+    margin-top: 10px;
+  }
+  
+  .container {
+        width: 100%;
+        min-height: 100vh;
+        background: rgb(255, 234, 234);
+        background-image: url("karateBack2.webp");
+    }
+     
+    .container h2 {
+        color: #000000;
+        font-size: 32px;
+        padding: 50px 0;
+        text-align: center;
+    }
+     
+    .price-row {
+        width: 90%;
+        max-width: 1100px;
+        margin: auto;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        grid-gap: 25px;
+    }
+     
+    .price-col {
+        background: rgb(252, 218, 218);
+        padding: 10% 15%;
+        border-style: solid;
+        border-radius: 10px;
+        border-color: black;
+        color: black;
+        text-align: center;
+    }
+     
+    .price-col p {
+        font-size: 22px;
+    }
+     
+    .price-col h3 {
+        font-size: 44px;
+        margin: 20px 0 40px;
+        font-weight: 500;
+    }
+     
+    .price-col h3 span {
+        font-size: 16px;
+    }
+     
+    .price-col ul {
+        text-align: left;
+        margin: 20px 0;
+        color: black;
+    }
+     
+    .price-col ul li {
+        margin: 15px 0;
+        size: 20px;
+    }
+     
+    .price-col button {
+        width: 100%;
+        padding: 14px 0;
+        background: transparent;
+        color: black;
+        font-size: 15px;
+        border: 1px solid red;
+        border-radius: 6px;
+        cursor: pointer;
+        transition: background 0.5s;
+    }
+     
+    .price-col button:hover {
+        background: red;
+    }
+    h2{
+      color: black;
+      -webkit-text-fill-color: white;   
+      -webkit-text-stroke-width: 1px;
+      -webkit-text-stroke-color: black;
+    }
+
+  
+</style>
+</head>
+<body>
+
+<!-- Links (sit on top) -->
+<header>
+    <a href="#" class="logo"> <img src="image/logo.png" alt=""></a>
+    
+    <ul class="navmenu">
+        <li><a href="home.html">Home</a></li>
+        <li><a href="KarateWebsite1.html">Articles</a></li>
+        <li><a href="main.html">Shop</a></li>
+        <li><a href="MembershipEnquiry.html">Membership Enquiry</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+        
+    </ul>
+    <div class="nav-class">
+        <li><a href="freeClassTest.html">Try Now</a></li>
+    </div>
+</header>
+<!-- div with image -->
+<div class="bgimg w3-display-container w3-grayscale-min" id="home">
+  <div class="w3-display-bottomleft w3-center w3-padding-large w3-hide-small">
+    <span class="w3-tag-sub">Experience the way of a martial artist</span>
+  </div>
+  <div class="w3-display-middle w3-center">
+    <span class="w3-text-white" style="font-size:80px;-webkit-text-stroke-width: 2px;-webkit-text-stroke-color: black;">Try A Class Now!</span>
+  </div>
+</div>
+  <div id="registration-form">
+    <div class='fieldset'>
+    <legend>Free Class Form</legend>
+        <form action="#" method="post" data-validate="parsley">
+            <div class='row'>
+                <label for='firstname'>First Name</label>
+                <input type="text" placeholder="First Name" name='firstname' id='firstname' data-required="true" data-error-message="Your First Name is required">
+            </div>
+            <div class='row'>
+                <label for='PhoneNo'>Phone Number</label>
+                <input type="text" placeholder="Phone Number" name='PhoneNo' id='PhoneNo' data-required="true" data-error-message="Your Phone Number is required">
+            </div>
+            <div class='row'>
+                <label for="email">E-mail</label>
+                <input type="text" placeholder="E-mail"  name='email' data-required="true" data-type="email" data-error-message="Your E-mail is required">
+            </div>
+            <div class='row'>
+                <label for="cemail">Confirm your E-mail</label>
+                <input type="text" placeholder="Confirm your E-mail" name='cemail' data-required="true" data-error-message="Your E-mail must correspond">
+            </div>
+            <input type="submit" value="Register">
+        </form>
+    </div>
+  </div>
+
+
+  <div class="container">
+    <h2>Select Your Plan</h2>
+    <div class="price-row">
+        <div class="price-col">
+            <p>Beginner</p>
+            <h3>RM15<span>/month</span></h3>
+            <ul>
+                <li>Introduction to basics of Karate</li>
+                <li>Syllabus training from white belt</li>
+                <li></li>
+                <li>Good for beginners</li>
+            </ul>
+            <button>Buy Now</button>
+        </div>
+        <div class="price-col">
+            <p>Keen Learner</p>
+            <h3>RM25<span>/month</span></h3>
+            <ul>
+                <li>Stronger and stricter training</li>
+                <li>Introducing sparring with Karate's style</li>
+                <li></li>
+                <li>Recommended</li>
+            </ul>
+            <button>Buy Now</button>
+        </div>
+        <div class="price-col">
+            <p>Serious Learner</p>
+            <h3>RM40<span>/month</span></h3>
+            <ul>
+                <li>More physical endurance training</li>
+                <li>Actively seeking competitions</li>
+                <li></li>
+                <li>Only for serious athletes</li>
+            </ul>
+            <button>Buy Now</button>
+        </div>
+    </div>
+</div>
+
+<footer class="w3-center w3-light-grey w3-padding-48 w3-large">
+  <p>Any enquiry? <a href="MembershipEnquiry.html">Click here</a></p>
+</footer>
+
+<script>
+// Tabbed Menu
+function openMenu(evt, menuName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("menu");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" w3-dark-grey", "");
+  }
+  document.getElementById(menuName).style.display = "block";
+  evt.currentTarget.firstElementChild.className += " w3-dark-grey";
+}
+document.getElementById("myLink").click();
+</script>
+<footer>
+  <div class="footer-content">
+    <ul>
+      <li><a><img src="image/fbLogo.png" class="fbLogo"></a></li>
+      <li><a><img src="image/instaLogo.png" class="instaLogo"></a></li>
+      <li><a><img src="image/mailLogo.png" class="mailLogo"></a></li>
+      <li><a><img src="image/twitterLogo.png" class="twitterLogo"></a></li>
+    </ul>
+  </div>
+</footer>
+</body>
+</html>

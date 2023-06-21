@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Foundation&family=Jost:ital,wght@0,100;0,200;0,300;0,500;0,700;1,300;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+</head>
+<body>
+
+    <header>
+        <a href="#" class="logo"> <img src="image/logo.png" alt=""></a>
+    
+        <ul class="navmenu">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="KarateWebsite1.html">Articles</a></li>
+            <li><a href="main.html">Shop</a></li>
+            <li><a href="MembershipEnquiry.html">Membership Enquiry</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+        <div class="nav-class">
+            <li><a href="freeClassTest.html">Try Now</a></li>
+        </div>
+    </header>
+
+    <section class="main-home">
+        <div class="main-text">
+            <h1>New Merchandise<br>in store</h1>
+            <a href="#products" class="main-btn">Shop Now<i class='bx bxs-right-arrow-alt'></i></a>
+        </div>
+    </section>
+
+    <section class="products-trending" id="products">
+        <div class="center-text">
+            <h2>Our Trending <span>Products</span></h2>
+        </div>
+        <div class="products">
+            <div class="row">
+                <img src="image/belts.png" alt="" class="image" onclick="showPaymentForm('Belts', 40)">
+                <h4 class="product-title">Belts</h4>
+                <div class="price">
+                    <p>RM 40.00</p>
+                </div>
+                <i class='bx bx-shopping-bag addcart'></i>
+            </div>
+            <div class="row">
+                <img src="image/karate gi.png" alt="" class="image" onclick="showPaymentForm('Karate Gi', 100)">
+                <div class="product-text"></div>
+                <div class="price">
+                    <h4>Karate Gi</h4>
+                    <p>RM 100.00</p>
+                </div>
+                <i class='bx bx-shopping-bag addcart'></i>
+            </div>
+            <div class="row">
+                <img src="image/t-shirt.png" alt="" class="image" onclick="showPaymentForm('T-shirts', 80)">
+                <div class="product-text">
+                    <h5>Sale</h5>
+                </div>
+                <div class="price">
+                    <h4>T-shirts</h4>
+                    <p>RM 80.00</p>
+                </div>
+                <i class='bx bx-shopping-bag addcart'></i>
+            </div>
+            <div class="row">
+                <img src="image/helmet.png" alt="" class="image" onclick="showPaymentForm('Helmets', 50)">
+                <div class="product-text">
+                    <h5>Sale</h5>
+                </div>
+                <div class="price">
+                    <h4>Helmets</h4>
+                    <p>RM 50.00</p>
+                </div>
+                <i class='bx bx-shopping-bag addcart'></i>
+            </div>
+            <div class="row">
+                <img src="image/body protection.png" alt="" class="image" onclick="showPaymentForm('Body Protections', 100)">
+                <div class="product-text">
+                    <h5>Sale</h5>
+                </div>
+                <div class="price">
+                    <h4>Body protections</h4>
+                    <p>RM 100.00</p>
+                </div>
+                <i class='bx bx-shopping-bag addcart'></i>
+            </div>
+            <div class="row">
+                <img src="image/shin guard.png" alt="" class="image" onclick="showPaymentForm('Shin Guard', 50)">
+                <div class="price">
+                    <h4>Shin Guard</h4>
+                    <p>RM 50.00</p>
+                </div>
+                <i class='bx bx-shopping-bag addcart'></i>
+            </div>
+        </div>
+    </section>
+
+    <div id="paymentPopup" class="popup">
+        <div class="popup-content">
+            <h3>Product Details</h3>
+            <p id="productInfo"></p>
+            <form onsubmit="return submitPaymentForm()">
+                <label for="name">Name:</label>
+                <input type="text" id="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" required>
+                <label for="card">Card Number:</label>
+                <input type="text" id="card" required>
+                <button type="submit">Submit</button>
+            </form>
+            <div class="thank-you-message" id="thankYouMessage">
+                Thank you for buying our product!
+            </div>
+            <button onclick="closePaymentPopup()">Close</button>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <ul>
+                <li><a><img src="image/fbLogo.png" class="fbLogo"></a></li>
+                <li><a><img src="image/instaLogo.png" class="instaLogo"></a></li>
+                <li><a><img src="image/mailLogo.png" class="mailLogo"></a></li>
+                <li><a><img src="image/twitterLogo.png" class="twitterLogo"></a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <script>
+        // JavaScript code for handling the popup functionality
+        function showPaymentForm(productName, price) {
+            const popup = document.getElementById('paymentPopup');
+            const productInfo = document.getElementById('productInfo');
+            const thankYouMessage = document.getElementById('thankYouMessage');
+            const nameInput = document.getElementById('name');
+            const emailInput = document.getElementById('email');
+            const cardInput = document.getElementById('card');
+            
+            productInfo.textContent = `Product: ${productName}\nPrice: RM ${price.toFixed(2)}`;
+            nameInput.value = '';
+            emailInput.value = '';
+            cardInput.value = '';
+            thankYouMessage.style.display = 'none';
+            popup.style.display = 'block';
+        }
+        
+        function closePaymentPopup() {
+            const popup = document.getElementById('paymentPopup');
+            popup.style.display = 'none';
+        }
+        
+        function submitPaymentForm() {
+            const thankYouMessage = document.getElementById('thankYouMessage');
+            thankYouMessage.style.display = 'block';
+            return false; // Prevent form submission
+        }
+    </script>
+</body>
+</html>

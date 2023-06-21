@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0 ;
+            padding: 0 ;
+            box-sizing:border-box;
+            scroll-behavior: smooth;
+            font-family: 'Jost',sans-serif;
+            list-style: none;
+            text-decoration: none;
+
+
+        }
+
+        header{
+            position: fixed;
+            width: 100%;
+            height:15%;
+            top: 0;
+            right: 0;
+            z-index: 1000;
+            display:flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: black;
+
+        }
+
+        .logo img{
+            max-width: 150px;
+            height: auto;
+            margin-left:50% ;
+
+
+    
+        }
+        .navmenu{
+            display: flex;
+
+
+
+        }
+        .navmenu a{
+            color: aliceblue;
+            font-size: 16px;
+            text-transform: capitalize;
+            padding: 10px 50px;
+            font-weight: 400;
+
+        }
+
+        .navmenu a:hover{
+            color:red;
+        }
+        .nav-class a{
+            color: aliceblue;
+            font-size: 16px;
+            text-transform: capitalize;
+            padding: 10px 20px;
+            font-weight: 400;
+            margin-right: 150px;
+        }
+        .nav-class a:hover{
+            color:red;
+        }
+
+        /*Sample*/
+        
+        @import url(https://fonts.googleapis.com/css?family=Lato:300,400,700);
+body {
+  background-color: #e6e6e6;
+  font-size: 100%;
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+}
+
+div, textarea, input {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.container {
+  height: 100%;
+  max-width: 510px;
+  min-width: 324px;
+  margin: 50px auto 10px;
+  background-color: #fff;
+  border: 1px solid #cfcfcf80;
+  border-bottom: 3px solid #ccc;
+  margin-top: 120px;
+}
+
+.row {
+  width: 100%;
+  margin: 0 0 1em 0;
+  padding: 0 2.5em;
+}
+.row.header {
+  padding: 1.5em 2.5em;
+  border-bottom: 1px solid #ccc;
+  background: url(logo.png) left -80px;
+  color: whitesmoke;
+  -webkit-text-stroke: 2px black;
+}
+.row.body {
+  padding: .5em 2.5em 1em;
+}
+
+.pull-right {
+  float: right;
+}
+
+h1 {
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  display: inline-block;
+  font-weight: 100;
+  font-size: 2.8125em;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  margin: 0 0 0.1em 0;
+  padding: 0 0 0.4em 0;
+}
+
+h3 {
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+  font-size: 1.25em;
+  margin: 1em 0 0.4em 0;
+}
+
+.btn {
+  font-size: 1.0625em;
+  display: inline-block;
+  padding: 0.74em 1.5em;
+  margin: 1.5em 0 0;
+  color: #fff;
+  border-width: 0 0 0 0;
+  border-bottom: 5px solid;
+  text-transform: uppercase;
+  background-color: #b3b3b3;
+  border-bottom-color: #8c8c8c;
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+}
+.btn:hover {
+  background-color: #bfbfbf;
+}
+.btn.btn-submit {
+  background-color: #4f6fad;
+  border-bottom-color: #374d78;
+}
+.btn.btn-submit:hover {
+  background-color: #5f7db6;
+}
+
+form {
+  max-width: 100%;
+  display: block;
+}
+form ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+form ul li {
+  margin: 0 0 0.25em 0;
+  clear: both;
+  display: inline-block;
+  width: 100%;
+}
+form ul li:last-child {
+  margin: 0;
+}
+form ul li p {
+  margin: 0;
+  padding: 0;
+  float: left;
+}
+form ul li p.right {
+  float: right;
+}
+form ul li .divider {
+  margin: 0.5em 0 0.5em 0;
+  border: 0;
+  height: 1px;
+  width: 100%;
+  display: block;
+  background-color: #4f6fad;
+  background-image: linear-gradient(to right, #ee9cb4, #4f6fad);
+}
+form ul li .req {
+  color: #ee9cb4;
+}
+form label {
+  display: block;
+  margin: 0 0 0.5em 0;
+  color: #4f6fad;
+  font-size: 1em;
+}
+form input {
+  margin: 0 0 0.5em 0;
+  border: 1px solid #ccc;
+  padding: 6px 10px;
+  color: #555;
+  font-size: 1em;
+}
+form textarea {
+  border: 1px solid #ccc;
+  padding: 6px 10px;
+  width: 100%;
+  color: #555;
+}
+form small {
+  color: #4f6fad;
+  margin: 0 0 0 0.5em;
+}
+
+@media only screen and (max-width: 480px) {
+  .pull-right {
+    float: none;
+  }
+
+  input {
+    width: 100%;
+  }
+
+  label {
+    width: 100%;
+    display: inline-block;
+    clear: both;
+  }
+
+  li, p {
+    width: 100%;
+  }
+
+  input.btn {
+    margin: 1.5em 0 0.5em;
+  }
+
+  h1 {
+    font-size: 2.25em;
+  }
+
+  h3 {
+    font-size: 1.125em;
+  }
+
+  li small {
+    display: none;
+  }
+}
+
+/*Sample2*/
+
+.faq {
+    width:70%;
+    margin: 0 auto;
+    }
+    .faq div {
+    border: 1px solid #000;
+    margin: 5px 0px;
+    background-color:#fff;
+    }
+    .question {
+    font-size:18px;
+    background-color:#ddd;
+    margin:0px;
+    padding: 15px;
+    }
+    .answer {
+    font-size:16px;
+    margin:0px;
+    padding: 0px 15px;
+    line-height:2;
+    max-height:0px;
+    overflow:hidden;
+    transition:2s;
+    }
+    .opener
+    {
+    font-size:25px;
+    float:right;
+    line-height:0.8;
+    cursor: pointer;
+    }
+    footer {
+    background-color: black;
+    color: #fff;
+    padding: 10px 0;
+    display: flex;
+    justify-content: center; 
+	margin-top: 100px;
+	border-top: 1px solid white;
+  }
+  
+  .footer-content {
+    display: flex;
+    justify-content: center; 
+  }
+  
+  .footer-content ul {
+    display: flex;
+    justify-content: center; 
+    list-style: none;
+    margin: 10 10 ; 
+    padding: 0;
+  }
+  
+  .footer-content ul li {
+    margin-right: 20px;
+  }
+  
+  .footer-content ul li a {
+    color: #fff;
+    font-size: 20px;
+  }
+  
+.fbLogo {
+    width: 80px;
+    height: 80px;
+    margin-top: 18px;
+  }
+  .mailLogo {
+    width: 110px;
+    height: 110px;
+    margin-top: 3px;
+  }
+  .twitterLogo {
+    width: 90px;
+    height: 90px;
+    margin-top: 10px;
+  }
+  .instaLogo {
+    width: 97px;
+    height: 97px;
+    margin-top: 10px;
+  }
+  
+  .popup {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+}
+
+.popup-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+#closePopup {
+  margin-top: 10px;
+}
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <a href="#" class="logo"> <img src="image/logo.png" alt=""></a>
+        
+        <ul class="navmenu">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="KarateWebsite1.html">Articles</a></li>
+            <li><a href="main.html">Shop</a></li>
+            <li><a href="MembershipEnquiry.html">Membership Enquiry</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            
+        </ul>
+        <div class="nav-class">
+            <li><a href="freeClassTest.html">Try Now</a></li>
+        </div>
+    </header>
+    <div class="container">
+        <div class="row header">
+          <h1>MEMBERSHIP ENQUIRY &nbsp;</h1>
+          <h3>Any questions regarding class!</h3>
+        </div>
+        <div class="row body">
+          <form action="#">
+            <ul>
+              
+              <li>
+                <p class="left">
+                  <label for="first_name">first name</label>
+                  <input type="text" name="first_name" placeholder="John" />
+                </p>
+                <p class="left">
+                  <label for="last_name">last name</label>
+                  <input type="text" name="last_name" placeholder="Smith" />      
+                </p>
+              </li>
+              
+              <li>
+                <p>
+                  <label for="email">email <span class="req">*</span></label>
+                  <input type="email" name="email" placeholder="john.smith@gmail.com" />
+                </p>
+              </li>        
+              <li><div class="divider"></div></li>
+              <li>
+                <label for="comments">comments</label>
+                <textarea cols="46" rows="3" name="comments"></textarea>
+              </li>
+              
+              <li>
+                <input class="btn btn-submit" type="submit" value="Submit" onclick="validateForm()" />
+                <small>or press <strong>enter</strong></small>
+              </li>
+            </ul>
+          </form>  
+        </div>
+      </div>
+
+<p></p>
+<p></p>
+<h2><center>FREQUENTLY ASKED QUESTIONS</center></h2>
+
+      <div class="faq">
+
+        <div>
+          <p class="question">What do we learn during the free class? <span onclick='faq(this)' class="opener">+</span></p>
+          <p class="answer">You will learn the essentials, core basics and will be given a brief explanation about the syllabus.</p>
+        </div>
+        
+        <div>    
+          <p class="question">Will there be any fees to continue learning? <span onclick='faq(this)' class="opener">+</span></p>
+          <p class="answer">Yes, membership fees can be viewed in this website.</p>
+        </div>
+        
+        <div>    
+          <p class="question">Is there any way to contact the instructor? <span onclick='faq(this)' class="opener">+</span></p>
+          <p class="answer">You can contact through mail: instructor@gmail.com</p>  
+        </div>
+        
+      </div>
+      <script>
+        function faq(ele)
+        {
+        var x = ele.parentElement.nextElementSibling.style.cssText;
+        if(x=='max-height: 500px;')
+        {    
+        ele.style.cssText='transform: rotate(0deg);';     
+        ele.parentElement.nextElementSibling.style.cssText = "transition:0.3s;max-height:0px;";    
+        }
+        else
+        {
+        ele.style.cssText='transform: rotate(45deg);';   
+        ele.parentElement.nextElementSibling.style.cssText = "max-height:500px;";
+        }
+      }
+  function validateForm() {
+    // Add your form validation logic here (if required)
+
+    // Show the pop-up
+
+       showPopup();
+  }
+
+  function showPopup() {
+    var popup = document.getElementById('popup');
+    popup.style.display = 'block';
+
+    var closePopupBtn = document.getElementById('closePopup');
+    closePopupBtn.addEventListener('click', function() {
+      closePopup();
+    });
+  }
+  function closePopup() {
+    var popup = document.getElementById('popup');
+    popup.style.display = 'none';
+  }
+
+        </script>
+        
+<div id="popup" class="popup">
+  <div class="popup-content">
+    <h3>Thank you for submitting the form!</h3>
+    <p>We will get back to you soon.</p>
+    <button id="closePopup" class="btn btn-submit">Close</button>
+  </div>
+</div>
+
+
+<footer>
+  <div class="footer-content">
+    <ul>
+      <li><a><img src="image/fbLogo.png" class="fbLogo"></a></li>
+      <li><a><img src="image/instaLogo.png" class="instaLogo"></a></li>
+      <li><a><img src="image/mailLogo.png" class="mailLogo"></a></li>
+      <li><a><img src="image/twitterLogo.png" class="twitterLogo"></a></li>
+    </ul>
+  </div>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="KarateWebsite1.css" type="text/css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Foundation&family=Jost:ital,wght@0,100;0,200;0,300;0,500;0,700;1,300;1,700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<header>
+  <a href="#" class="logo"> <img src="image/logo.png" alt=""></a>
+  
+  <ul class="navmenu">
+      <li><a href="home.html">Home</a></li>
+      <li><a href="KarateWebsite1.html">Articles</a></li>
+      <li><a href="main.html">Shop</a></li>
+      <li><a href="MembershipEnquiry.html">MembershipEnquiry</a></li>
+      <li><a href="contact.html">Contact Us</a></li>
+      
+      
+  </ul>
+  <div class="nav-class">
+      <li><a href="freeClassTest.html">Try Now</a></li>
+  </div>
+</header>
+
+
+
+<center><body class="body">
+
+  <h4 class="title">ARTICLES</h4>
+  
+<section class="sliders">
+  <div class="slider-frame">
+    <div class="slide-images">
+            <div class="img-container">
+                <img src="image\kumite girls.jpg">
+            </div>
+            <div class="img-container">
+                <img src="image\kids training.jpg">
+            </div>
+            <div class="img-container">
+                <img src="image\4 fighters.jpg">
+            </div>
+    </div>
+ </div>
+</section>
+ <h2 class="Explore1">EXPLORE MORE>>> </h2>
+
+    <nav>
+      <ul class="nav_article">
+        <li><a href="KarateWebsite1.html" class="Nav1">TRAININGS</a></li>
+        <li><a href="KarateWebsite2.html" class="Nav2">TOURNAMENTS</a></li>
+        <li><a href="KarateWebsite3.html" class="Nav3"> GRADING </a> </li>
+        <li><a href="KarateWebsite4.html" class= "Nav4"> OTHER PROGRAMMES </a></li>
+       
+    </ul>
+  
+    </nav>
+
+    <div class="article1" >
+
+      <img src="image\Trainingkarate3.jpg" alt="Karate training">
+
+      <h1 id="TRAIN">OUR TRAININGS </h1>
+
+      <p1>Karate training offers numerous benefits for both physical and mental health. Here in SeishinKan Dojo, we teach our students the way of Shito-Ryu Karate-do to enhance the ability to defend oneself in dangerous situations. </p1>   
+     
+      <p2> Moreover, we also provide continual encouragement and feedback, which builds students’ self-confidence levels as well as proper technique. A typical karate training class will usually begin with a warm-up session to prepare the body for the physical activity that follows. This may include stretching exercises, jogging, or jumping jacks.
+        After the warm-up, the instructor will usually demonstrate and explain the techniques that will be covered in the class. This may include basic strikes, kicks, blocks, and stances.
+        Students will then practice these techniques with a partner or on their own, under the guidance of the instructor. The instructor will provide feedback and corrections to help students improve their form and technique.
+      </p2>
+
+      <p3> As the class progresses, the instructor may introduce more advanced techniques or combinations, and students will continue to practice and refine their skills.
+        Towards the end of the class, there may be a cool-down period where students stretch and relax their muscles. The instructor may also lead a brief meditation or breathing exercise to help students focus and calm their minds.
+      </p3>
+
+      <br><br>
+
+    </div>
+
+    <div>
+      <h2 class="trainGallery">GALLERY</h2>
+
+      <div class="slider">
+        <div class="slides">
+          <!--radio buttons start-->
+          <input type="radio" name="radio-btn" id="radio1">
+          <input type="radio" name="radio-btn" id="radio2">
+          <input type="radio" name="radio-btn" id="radio3">
+          <input type="radio" name="radio-btn" id="radio4">
+        
+          <!--radio buttons end-->
+          <!--slide images start-->
+          <div class="slide first">
+            <img src="image\Trainingkarate1.jpg" alt="">
+          </div>
+          <div class="slide">
+            <img src="image\Trainingkarate2.jpg" alt="">
+          </div>
+          <div class="slide">
+            <img src="image\Trainingkarate3.jpg" alt="">
+          </div>
+          <div class="slide">
+            <img src="image\Trainingkarate4.jpg" alt="">
+          </div>
+          <!--slide images end-->
+          <!--automatic navigation start-->
+          <div class="navigation-auto">
+            <div class="auto-btn1"></div>
+            <div class="auto-btn2"></div>
+            <div class="auto-btn3"></div>
+            <div class="auto-btn4"></div>
+          </div>
+          <!--automatic navigation end-->
+        </div>
+        <!--manual navigation start-->
+        <div class="navigation-manual">
+          <label for="radio1" class="manual-btn"></label>
+          <label for="radio2" class="manual-btn"></label>
+          <label for="radio3" class="manual-btn"></label>
+          <label for="radio4" class="manual-btn"></label>
+        </div>
+        <!--manual navigation end-->
+      </div>
+      <!--image slider end-->
+  
+      <script type="text/javascript">
+      var counter = 1;
+      setInterval(function(){
+        document.getElementById('radio' + counter).checked = true;
+        counter++;
+        if(counter > 4){
+          counter = 1;
+        }
+      }, 5000);
+      </script>
+      
+      <iframe class="Video" width="560" height="315" src="https://www.youtube.com/embed/AjHqNxPXvAE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </div>
+
+    <a href="KarateWebsite2.html" class="Btn">Next: Read TOURNAMENTS</a>
+    
+    
+    <br><br>
+
+
+
+    <footer>
+      <div class="footer-content">
+        <ul>
+          <li><a><img src="image/fbLogo.png" class="fbLogo"></a></li>
+          <li><a><img src="image/instaLogo.png" class="instaLogo"></a></li>
+          <li><a><img src="image/mailLogo.png" class="mailLogo"></a></li>
+          <li><a><img src="image/twitterLogo.png" class="twitterLogo"></a></li>
+        </ul>
+      </div>
+    </footer>
+  </body></center>
+</html>
